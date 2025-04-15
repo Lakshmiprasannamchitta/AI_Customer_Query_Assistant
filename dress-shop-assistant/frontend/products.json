@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Floral Maxi Dress",
+      "price": 59.99,
+      "details": "Elegant floral pattern, perfect for summer",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Black Cocktail Dress",
+      "price": 79.99,
+      "details": "Sleek and stylish for evening wear",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]

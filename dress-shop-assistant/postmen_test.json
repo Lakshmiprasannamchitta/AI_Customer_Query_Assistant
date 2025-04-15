@@ -1,0 +1,173 @@
+{
+    "info": {
+      "name": "Dress Shop API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Signup",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\": \"John Doe\", \"mobile_no\": \"1234567890\", \"dob\": \"1990-01-01\", \"password\": \"pass123\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/signup", "host": ["localhost"], "port": "5000", "path": ["signup"] }
+        }
+      },
+      {
+        "name": "Login",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"mobile_no\": \"1234567890\", \"password\": \"pass123\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/login", "host": ["localhost"], "port": "5000", "path": ["login"] }
+        }
+      },
+      {
+        "name": "Add Product",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\": \"Summer Dress\", \"order_date\": \"2025-04-07\", \"price\": 49.99, \"order_no\": \"ORD123\", \"payment_method\": \"Credit Card\", \"quantity\": 2, \"shipping_address\": \"123 Main St\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/products", "host": ["localhost"], "port": "5000", "path": ["products"] }
+        }
+      },
+      {
+        "name": "Get Products",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:5000/products", "host": ["localhost"], "port": "5000", "path": ["products"] }
+        }
+      },
+      {
+        "name": "Update Product",
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\": \"Winter Dress\", \"order_date\": \"2025-04-07\", \"price\": 59.99, \"order_no\": \"ORD123\", \"payment_method\": \"PayPal\", \"quantity\": 1, \"shipping_address\": \"456 Oak St\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/products/1", "host": ["localhost"], "port": "5000", "path": ["products", "1"] }
+        }
+      },
+      {
+        "name": "Delete Product",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": { "raw": "http://localhost:5000/products/1", "host": ["localhost"], "port": "5000", "path": ["products", "1"] }
+        }
+      },
+      {
+        "name": "Add Order Status",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"product_id\": 1, \"status\": \"not yet shipped\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/order_status", "host": ["localhost"], "port": "5000", "path": ["order_status"] }
+        }
+      },
+      {
+        "name": "Get Order Status",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:5000/order_status", "host": ["localhost"], "port": "5000", "path": ["order_status"] }
+        }
+      },
+      {
+        "name": "Add Refund",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"product_id\": 1, \"return_money\": 49.99, \"account_no\": \"123456789\", \"cancelled\": 1, \"order_date\": \"2025-04-07\", \"cancel_date\": \"2025-04-08\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/refunds", "host": ["localhost"], "port": "5000", "path": ["refunds"] }
+        }
+      },
+      {
+        "name": "Get Refunds",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:5000/refunds", "host": ["localhost"], "port": "5000", "path": ["refunds"] }
+        }
+      },
+      {
+        "name": "Add Store Policy",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"rule\": \"Returns accepted within 30 days.\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/store_policies", "host": ["localhost"], "port": "5000", "path": ["store_policies"] }
+        }
+      },
+      {
+        "name": "Get Store Policies",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:5000/store_policies", "host": ["localhost"], "port": "5000", "path": ["store_policies"] }
+        }
+      },
+      {
+        "name": "Add Order History",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"order_date\": \"2025-04-07\", \"product_name\": \"Summer Dress\", \"price\": 49.99}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/order_history", "host": ["localhost"], "port": "5000", "path": ["order_history"] }
+        }
+      },
+      {
+        "name": "Get Order History",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:5000/order_history", "host": ["localhost"], "port": "5000", "path": ["order_history"] }
+        }
+      },
+      {
+        "name": "Chat with Bot",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"message\": \"I want to order Summer Dress with order number ORD123\"}",
+            "options": { "raw": { "language": "json" } }
+          },
+          "url": { "raw": "http://localhost:5000/chat", "host": ["localhost"], "port": "5000", "path": ["chat"] }
+        }
+      }
+    ]
+  }

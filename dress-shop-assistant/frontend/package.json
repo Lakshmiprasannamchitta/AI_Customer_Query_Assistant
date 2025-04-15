@@ -1,0 +1,24 @@
+{
+    "name": "dress-shop-frontend",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "serve public -l 5001",
+        "build": "babel . --out-dir public --extensions \".js,.jsx\" --ignore node_modules,public"
+    },
+    "dependencies": {
+        "serve": "^14.2.0"
+    },
+    "main": "/index.html",
+    "devDependencies": {
+        "@babel/cli": "^7.22.0",
+        "@babel/core": "^7.22.0",
+        "@babel/preset-env": "^7.22.0",
+        "@babel/preset-react": "^7.26.3",
+        "webpack": "^5.99.2",
+        "webpack-cli": "^6.0.1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
