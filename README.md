@@ -1,6 +1,6 @@
 # AI-Powered Customer Query Assistant
 
-A **ChatGPT-driven chatbot** that answers customer inquiries about products, order statuses, refunds, and store policies.
+A **Deepseek-driven chatbot** that answers customer inquiries about products, order statuses, refunds, and store policies.
 
 ## 🚀 Description
 
