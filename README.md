@@ -17,7 +17,7 @@ The AI-Powered Customer Query Assistant is designed to streamline customer servi
 
 - **Frontend**: React
 - **Backend**: Node.js
-- **AI**: OpenAI's ChatGPT API
+- **AI**: OpenAI's DEEPSEEK API
 - **APIs**: Product inventory API integration
 
 ## 🛠️ Setup Instructions
