@@ -4,7 +4,7 @@ An intelligent chatbot system built using React, Node.js, and SQLite, powered by
 📌 Project Description
 The AI-Powered Customer Query Assistant is designed to enhance customer support with a responsive, natural language chatbot. It leverages OpenAI's ChatGPT for generating human-like answers and integrates with product APIs to provide contextual and personalized responses.
 
-⚙️ Core Features
+#⚙️ Core Features
 💬 Real-time AI responses to frequently asked questions.
 🔗 Integration with product inventory APIs for accurate product-related responses.
 🖥️ React-based frontend with:
