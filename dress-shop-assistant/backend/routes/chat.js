@@ -41,6 +41,10 @@ router.post('/', async (req, res) => {
           ? { product_id: productId, status: status.status, message: `Hello ${user.name}, order status for product ID ${productId}: ${status.status}` }
           : { message: `Hello ${user.name}, no order status found for product ID ${productId}.` }
       );
+    } else if (lowercaseMessage.startsWith('Hi')) {
+      return res.json({
+        message:"Hey! How can i help you? 😊"
+      })
     } else if (lowercaseMessage.startsWith('process refund')) {
       const productIdMatch = message.match(/process refund (\d+)/i);
       const productId = productIdMatch ? parseInt(productIdMatch[1]) : 0;
